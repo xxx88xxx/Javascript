@@ -1,106 +1,151 @@
-// комментарий 
 /*
-комментарий
-и еще один комментарий
+// Task: Learn single-line and multi-line comment syntax.
+// This is a single-line comment.
+// A multi-line comment starts with a slash and an asterisk
+// and ends with an asterisk and a slash.
 */
 
 /*
-JavaScript (JS) - front/backend
-Front - Angular, Vue.js, React
-Back - Node.js / Express
-Automation (QA) - Selenium / Cypress / Playwright
-
-1) научиться читать код
-2) научиться писать код
-3) делать XSS инъекции
+// JavaScript overview:
+// Frontend: Angular, Vue.js, React.
+// Backend: Node.js and Express.
+// Test automation: Selenium, Cypress, Playwright.
+//
+// Learning goals:
+// 1. Learn to read code.
+// 2. Learn to write code.
+// 3. Understand and practice XSS in authorized training environments.
 */
 
-//let, const, (var)
-let x = 5; 
+/*
+// Task: Declare variables with let, update a value, and print it.
+// Variables declared with let can be reassigned.
+let x = 5;
 let y = 10;
 y = 11;
+
 console.log(y);
+*/
 
+/*
+// Task: Declare constants using const.
+// Constants cannot be reassigned.
 const j = 10;
-//j = 11; //Assignment to constant variable.
-// PI = 3.14
+// j = 11; // This would cause an "Assignment to constant variable" error.
 
+// Example placeholder values for practicing constants.
 const DOB = "01-01-1990";
 const SSN = "1234324234";
+*/
 
-//data types, typeof - показывает тип данных переменной
-let num = 5; //number
-console.log(typeof num);
-console.log(num);
+/*
+// Task: Create a number variable and print its type and value.
+// The typeof operator returns the type of a value.
+let num = 5;
 
-let str = "5"; //string
-console.log(typeof str);
+console.log(typeof num); // "number"
+console.log(num); // 5
+*/
 
-let isSunny = true; //false
-console.log(typeof isSunny); //boolean
+/*
+// Task: Create a string variable and print its type.
+let str = "5";
 
-let f = function(){}
-console.log(typeof f); //function
+console.log(typeof str); // "string"
+*/
 
+/*
+// Task: Create a boolean variable and print its type.
+// Boolean values are true and false.
+let isSunny = true;
+
+console.log(typeof isSunny); // "boolean"
+*/
+
+/*
+// Task: Store a function in a variable and print its type.
+let f = function () {};
+
+console.log(typeof f); // "function"
+*/
+
+/*
+// Task: Create an empty array and print its type.
+// Arrays are objects, so typeof returns "object".
 let arr = [];
-console.log(typeof arr); //array -> object
 
+console.log(typeof arr); // "object"
+*/
+
+/*
+// Task: Create an empty object and print its type.
 let o = {};
-console.log(typeof o); //object
 
+console.log(typeof o); // "object"
+*/
+
+/*
+// Task: Print a full name using concatenation and interpolation.
 let firstName = "John";
 let lastName = "Smith";
 
-
-//concatenation - слияние (объединение) строк
+// Concatenation joins strings using the + operator.
 console.log("My name is " + firstName + " " + lastName);
 
-//interpolation - когда мы подставляем значения переменных через знак доллара
-// и используем косые кавычки
+// Interpolation inserts values using ${...} inside backticks.
 console.log(`My name is ${firstName} ${lastName}`);
+*/
 
+/*
+// Task: Compare values using loose and strict equality.
+// == compares values with type conversion when needed.
+// === compares values without type conversion.
+// = assigns a value.
+console.log(1 == 1); // true
+console.log(1 === 1); // true
+console.log("1" == 1); // true
+console.log("1" === 1); // false
+*/
 
-
-// == сравнивает только значения 
-// === сравнивает значения + тип данных
-// = присваивание
-
-
-console.log(1 == 1); //boolean 
-console.log(1 === 1); //true
-console.log("1" == 1); //true
-console.log("1" === 1); //false
-
+/*
+// Task: Check whether a variable equals 5.
 let q = 5;
 
-if(q == 5){
+if (q == 5) {
     console.log("OK");
-}else{
+} else {
     console.log("NOT OK");
 }
+*/
 
+/*
+// Task: Check whether a variable is strictly not equal to 5.
+// !== checks inequality without type conversion.
 let m = 5;
 
-// !== НЕ!!!!!!!!! НЕ РАВНО!!!
-if(m !== 5){
+if (m !== 5) {
     console.log("OK");
-}else{
+} else {
     console.log("NOT OK");
 }
+*/
 
-// || - или (or)
-// && - и (and)
-
+/*
+// Task: Compare conditions using logical OR and logical AND.
+// || means OR: at least one condition must be true.
+// && means AND: all conditions must be true.
 let n = 5;
-// если хотя бы 1 условие совпадает - то это TRUE
-if(n == 5 || n == 6 || n == "Erlan" || n == 1111){
+
+if (n == 5 || n == 6 || n == "Erlan" || n == 1111) {
     console.log("OK");
-}else{
+} else {
     console.log("NOT OK");
 }
 
-if(n == 5 && n == 6){ // FALSE
+// A number cannot equal both 5 and 6, so this condition is false.
+if (n == 5 && n == 6) {
     console.log("OK");
-}else{
+} else {
     console.log("NOT OK");
 }
+*/
